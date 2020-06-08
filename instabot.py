@@ -1,5 +1,5 @@
 
-#imporing selenium module for using chrome
+#importing  selenium module for using chrome( yo need to downlaod and place the chromedriver file in the same folder to import webdrver)
 from selenium import webdriver
 #importing time module
 from time import sleep
@@ -28,7 +28,7 @@ class Instabot:
         profile_site=self.driver.get("https://www.instagram.com"+"/"+user_name+"/")
         sleep(5)
 
-        #deifinition to get followeing list from profile
+        #method to get followeing list from profile
 
     def get_following(self):
         sleep(2)
@@ -60,7 +60,7 @@ class Instabot:
         sleep(5)
         return followers_list
 
-        #deifinition to return followers list from profile
+        #method to return followers list from profile
 
     def get_followers(self):
         sleep(2)
@@ -93,7 +93,7 @@ class Instabot:
         sleep(5)
         return following_list
 
-        #deifinition to check followers and following list
+        #methof to check followers and following list
         #calls following and followers deifinition , place them it two list and
         #checks the list with one another and returns list with names in following_list
         #but not in followers list
@@ -121,5 +121,4 @@ class Instabot:
 
 
 
-j=Instabot('jt_zt','thapa11')
-print(j.get_unfollowing())
+
